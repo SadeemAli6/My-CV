@@ -4,10 +4,11 @@ body {
   background-color: #fdfdfd;
   background-size: cover;
   background-repeat: no-repeat;
-  background-attachment: fixed;
+  /* background-attachment: fixed; */ /* حذفناها عشان تظهر الخلفية صح على الجوال */
   margin: 0;
   padding: 0;
   color: #333;
+  min-height: 100vh;
 }
 
 .cv-container {
@@ -18,21 +19,13 @@ body {
   box-shadow: 0 4px 12px rgba(0,0,0,0.1);
   border-radius: 10px;
   overflow: hidden;
-  flex-wrap: wrap; /* لجعل التصميم يستجيب */
+  flex-wrap: wrap; /* عشان التصميم يستجيب */
 }
 
 .left-section, .right-section {
   padding: 30px;
   width: 50%;
   box-sizing: border-box;
-}
-
-/* استجابة للجوال */
-@media (max-width: 768px) {
-  .left-section, .right-section {
-    width: 100%;
-    padding: 20px;
-  }
 }
 
 h1 {
@@ -100,4 +93,28 @@ h2 {
   color: #222;
   margin-bottom: 20px;
   text-align: center;
+}
+
+/* تحسين العرض على الجوال */
+@media (max-width: 768px) {
+  .left-section, .right-section {
+    width: 100%;
+    padding: 20px;
+  }
+
+  h1 {
+    font-size: 24px;
+  }
+
+  h2 {
+    font-size: 16px;
+  }
+
+  .bio, .contact p, .section ul, .section p {
+    font-size: 15px;
+  }
+
+  .right-section img {
+    width: 90%; /* تكبير الصورة شوي عشان تكون واضحة */
+  }
 }
