@@ -18,12 +18,21 @@ body {
   box-shadow: 0 4px 12px rgba(0,0,0,0.1);
   border-radius: 10px;
   overflow: hidden;
+  flex-wrap: wrap; /* لجعل التصميم يستجيب */
 }
 
 .left-section, .right-section {
   padding: 30px;
   width: 50%;
   box-sizing: border-box;
+}
+
+/* استجابة للجوال */
+@media (max-width: 768px) {
+  .left-section, .right-section {
+    width: 100%;
+    padding: 20px;
+  }
 }
 
 h1 {
@@ -53,6 +62,12 @@ h2 {
 .contact p {
   margin: 5px 0;
   font-size: 14px;
+}
+
+/* الخط تحت الإيميل ورقم الجوال */
+.contact a {
+  color: inherit;
+  text-decoration: underline;
 }
 
 .highlight-title {
