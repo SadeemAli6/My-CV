@@ -4,7 +4,7 @@ body {
   background-color: #fdfdfd;
   background-size: cover;
   background-repeat: no-repeat;
-  background-attachment: fixed;
+ /* background-attachment: fixed; */
   margin: 0;
   padding: 0;
   color: #333;
