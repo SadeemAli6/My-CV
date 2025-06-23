@@ -48,7 +48,16 @@ h2 {
   margin: 5px 0;
   font-size: 14px;
 }
-
+.contact {
+  background-color: #ffe6f0;
+  padding: 15px;
+  border-radius: 8px;
+}
+ .contact {
+  background-color: #f8bbd0;
+  padding: 15px;
+  border-radius: 8px;
+}
 .section {
   margin-top: 20px;
 }
