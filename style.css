@@ -51,13 +51,6 @@ h2 {
   line-height: 1.6;
 }
 
-/* أيقونة الإيميل بحجم أصغر */
-.email-icon {
-  width: 25px;
-  height: 25px;
-  vertical-align: middle;
-}
-
 /* التواصل */
 .contact {
   background-color: #f8bbd0;
