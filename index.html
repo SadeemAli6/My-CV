@@ -4,31 +4,44 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Sadeem Ali Albalhan - CV</title>
+
+  <!-- أيقونة التبويب -->
   <link rel="icon" type="image/x-icon" href="title.png">
-  <link rel="stylesheet" href="style.css"> <!-- رابط ملف CSS -->
+
+  <!-- استدعاء ملف CSS -->
+  <link rel="stylesheet" href="style.css">
+
+  <!-- خط غير افتراضي من Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
 </head>
 <body>
+  <!-- زر للتبديل بين الوضع الليلي والنهاري -->
+  <button id="mode-toggle">Toggle Mode</button>
+
+  <!-- الحاوية الرئيسية للسيرة الذاتية -->
   <div class="cv-container">
+    <!-- القسم الأيسر: معلومات شخصية -->
     <div class="left-section">
       <h1>Sadeem Ali Albalhan</h1>
       <h2>Graphic & Web Designer</h2>
+
+      <!-- نبذة مختصرة -->
       <p class="bio">
         Digital designer with experience in social media content (Techminds team, Platform X). 
         Currently learning UI design and front-end basics. Passionate about creative solutions and continuous learning.
       </p>
 
+      <!-- معلومات التواصل -->
       <div class="contact">
-  <h3>Contact:</h3>
-  <p>
-    <img src="mail-icon.png" alt="Email" style="width: 20px; vertical-align: middle; margin-right: 8px;">
-    <a href="mailto:sadeem60ali@gmail.com">sadeem60ali@gmail.com</a>
-  </p>
-  <p>
-    📞 <a href="tel:0559828385">0559828385</a>
-  </p>
-</div>
+        <h3>Contact:</h3>
+        <p>
+          <img src="mail-icon.png" alt="Email" class="icon">
+          <a href="mailto:sadeem60ali@gmail.com">sadeem60ali@gmail.com</a>
+        </p>
+        <p>📞 <a href="tel:0559828385">0559828385</a></p>
+      </div>
 
-
+      <!-- الدورات -->
       <div class="section">
         <h3 class="highlight-title">Courses</h3>
         <ul>
@@ -40,6 +53,7 @@
         </ul>
       </div>
 
+      <!-- الهوايات -->
       <div class="section">
         <h3 class="highlight-title">Hobbies</h3>
         <ul>
@@ -50,16 +64,20 @@
         </ul>
       </div>
 
+      <!-- المهارات -->
       <div class="section">
         <h3 class="highlight-title">Skills</h3>
         <p>Dealing with Programming languages such as C++, Python, JS, HTML, CSS</p>
       </div>
     </div>
 
+    <!-- القسم الأيمن: صورة وخبرات وتعليم -->
     <div class="right-section">
-      <img src="https://raw.githubusercontent.com/SadeemAli6/My-CV/main/Pink.jpg" alt="Laptop Image" />
+      <img src="https://raw.githubusercontent.com/SadeemAli6/My-CV/main/Pink.jpg" alt="Profile Image" />
+
       <h3 class="articles-title">IF YOU BELIEVE IT YOU CAN DO IT!</h3>
 
+      <!-- الخبرات -->
       <div class="section">
         <h3 class="highlight-title">Experience</h3>
         <ul>
@@ -70,11 +88,20 @@
         </ul>
       </div>
 
+      <!-- التعليم -->
       <div class="section">
         <h3 class="highlight-title">Education</h3>
         <p>BA in Information Technology</p>
       </div>
     </div>
   </div>
+
+  <!-- جافاسكربت لتبديل الوضع الليلي -->
+  <script>
+    const toggleButton = document.getElementById('mode-toggle');
+    toggleButton.addEventListener('click', () => {
+      document.body.classList.toggle('dark-mode');
+    });
+  </script>
 </body>
 </html>
