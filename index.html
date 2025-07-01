@@ -8,19 +8,18 @@
   <!-- أيقونة التبويب -->
   <link rel="icon" type="image/x-icon" href="title.png">
 
-  <!-- تحميل خط Google Fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+  <!-- تحميل الخط من Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
 
   <!-- ربط ملف CSS -->
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <!-- زر تبديل الوضع الليلي/النهاري -->
+  <!-- زر الوضع الليلي -->
   <button id="mode-toggle">🌙 Dark Mode</button>
 
-  <!-- الحاوية الرئيسية -->
+  <!-- الحاوية الأساسية -->
   <div class="cv-container">
-    <!-- القسم الأيسر -->
     <div class="left-section">
       <h1>Sadeem Ali Albalhan</h1>
       <h2>Graphic & Web Designer</h2>
@@ -33,7 +32,7 @@
       <div class="contact">
         <h3>Contact:</h3>
         <p>
-          <img src="mail-icon.png" alt="Email" class="icon">
+          <img src="mail-icon.png" alt="Email" class="email-icon">
           <a href="mailto:sadeem60ali@gmail.com">sadeem60ali@gmail.com</a>
         </p>
         <p>📞 <a href="tel:0559828385">0559828385</a></p>
@@ -66,7 +65,6 @@
       </div>
     </div>
 
-    <!-- القسم الأيمن -->
     <div class="right-section">
       <img src="https://raw.githubusercontent.com/SadeemAli6/My-CV/main/Pink.jpg" alt="Profile Image" />
       <h3 class="articles-title">IF YOU BELIEVE IT YOU CAN DO IT!</h3>
@@ -88,7 +86,7 @@
     </div>
   </div>
 
-  <!-- سكربت تفعيل الوضع الليلي -->
+  <!-- كود الوضع الليلي -->
   <script>
     const toggleButton = document.getElementById('mode-toggle');
     toggleButton.addEventListener('click', () => {
