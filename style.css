@@ -1,4 +1,4 @@
-/* إعداد الخط الأساسي */
+/* 💡 الخط الجديد */
 body {
   font-family: 'Poppins', sans-serif;
   background-color: #fdfdfd;
@@ -12,26 +12,19 @@ body {
   transition: background-color 0.3s ease, color 0.3s ease;
 }
 
-/* الحاوية الرئيسية */
+/* 🔲 الحاوية الأساسية */
 .cv-container {
   display: flex;
   flex-wrap: wrap;
   max-width: 1100px;
-  margin: 40px auto;
+  margin: 60px auto;
   background-color: #ffeef0;
   box-shadow: 0 4px 12px rgba(0,0,0,0.1);
   border-radius: 10px;
   overflow: hidden;
 }
 
-/* أقسام اليمين واليسار */
-.left-section, .right-section {
-  padding: 30px;
-  width: 50%;
-  box-sizing: border-box;
-}
-
-/* استجابة للشاشات الصغيرة */
+/* 📱 استجابة للجوال */
 @media (max-width: 768px) {
   .left-section, .right-section {
     width: 100%;
@@ -39,7 +32,14 @@ body {
   }
 }
 
-/* العناوين */
+/* 🧱 تقسيم الصفحة */
+.left-section, .right-section {
+  padding: 30px;
+  width: 50%;
+  box-sizing: border-box;
+}
+
+/* 📝 العناوين */
 h1 {
   font-size: 28px;
   margin-bottom: 10px;
@@ -57,7 +57,7 @@ h2 {
   line-height: 1.6;
 }
 
-/* قسم التواصل */
+/* ☎️ التواصل */
 .contact {
   background-color: #f8bbd0;
   padding: 15px;
@@ -75,13 +75,15 @@ h2 {
   text-decoration: underline;
 }
 
+/* ✉️ تنسيق أيقونة الإيميل */
 .icon {
-  width: 20px;
+  width: 16px;
+  height: 16px;
   vertical-align: middle;
   margin-right: 8px;
 }
 
-/* العناوين الفرعية */
+/* 🟣 عنوان القسم */
 .highlight-title {
   background-color: #f8bbd0;
   display: inline-block;
@@ -90,6 +92,7 @@ h2 {
   margin-bottom: 10px;
 }
 
+/* 📋 القوائم */
 .section ul {
   list-style-type: disc;
   padding-left: 20px;
@@ -97,7 +100,7 @@ h2 {
   margin-top: 0;
 }
 
-/* صورة الجانب الأيمن */
+/* 🖼️ صورة الملف الشخصي */
 .right-section img {
   width: 80%;
   border-radius: 8px;
@@ -107,7 +110,7 @@ h2 {
   margin-right: auto;
 }
 
-/* الشعار أو الاقتباس */
+/* ✨ الشعار التحفيزي */
 .articles-title {
   font-size: 18px;
   font-style: italic;
@@ -116,32 +119,36 @@ h2 {
   text-align: center;
 }
 
-/* زر الوضع الليلي */
+/* 🌓 زر الوضع الليلي */
 #mode-toggle {
   position: fixed;
-  top: 10px;
-  right: 10px;
-  padding: 8px 12px;
+  top: 20px;
+  right: 20px;
+  padding: 8px 14px;
   background-color: #f8bbd0;
-  color: #222;
+  color: #000;
   border: none;
   border-radius: 5px;
+  font-weight: 600;
   cursor: pointer;
+  box-shadow: 0 0 6px rgba(0,0,0,0.1);
+  transition: background-color 0.3s ease;
+  z-index: 999;
 }
 
-/* الوضع الليلي */
+/* 🌚 الوضع الليلي */
 body.dark-mode {
-  background-color: #1e1e1e;
-  color: #f5f5f5;
+  background-color: #121212;
+  color: #eee;
 }
 
 body.dark-mode .cv-container {
-  background-color: #2b2b2b;
+  background-color: #1e1e1e;
 }
 
 body.dark-mode .contact,
 body.dark-mode .highlight-title,
 body.dark-mode #mode-toggle {
-  background-color: #4a148c;
+  background-color: #6a1b9a;
   color: #fff;
 }

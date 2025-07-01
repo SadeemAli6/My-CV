@@ -8,30 +8,28 @@
   <!-- أيقونة التبويب -->
   <link rel="icon" type="image/x-icon" href="title.png">
 
-  <!-- استدعاء ملف CSS -->
-  <link rel="stylesheet" href="style.css">
-
-  <!-- خط غير افتراضي من Google Fonts -->
+  <!-- تحميل خط Google Fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+
+  <!-- ربط ملف CSS -->
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <!-- زر للتبديل بين الوضع الليلي والنهاري -->
-  <button id="mode-toggle">Toggle Mode</button>
+  <!-- زر تبديل الوضع الليلي/النهاري -->
+  <button id="mode-toggle">🌙 Dark Mode</button>
 
-  <!-- الحاوية الرئيسية للسيرة الذاتية -->
+  <!-- الحاوية الرئيسية -->
   <div class="cv-container">
-    <!-- القسم الأيسر: معلومات شخصية -->
+    <!-- القسم الأيسر -->
     <div class="left-section">
       <h1>Sadeem Ali Albalhan</h1>
       <h2>Graphic & Web Designer</h2>
 
-      <!-- نبذة مختصرة -->
       <p class="bio">
         Digital designer with experience in social media content (Techminds team, Platform X). 
         Currently learning UI design and front-end basics. Passionate about creative solutions and continuous learning.
       </p>
 
-      <!-- معلومات التواصل -->
       <div class="contact">
         <h3>Contact:</h3>
         <p>
@@ -41,7 +39,6 @@
         <p>📞 <a href="tel:0559828385">0559828385</a></p>
       </div>
 
-      <!-- الدورات -->
       <div class="section">
         <h3 class="highlight-title">Courses</h3>
         <ul>
@@ -53,7 +50,6 @@
         </ul>
       </div>
 
-      <!-- الهوايات -->
       <div class="section">
         <h3 class="highlight-title">Hobbies</h3>
         <ul>
@@ -64,20 +60,17 @@
         </ul>
       </div>
 
-      <!-- المهارات -->
       <div class="section">
         <h3 class="highlight-title">Skills</h3>
         <p>Dealing with Programming languages such as C++, Python, JS, HTML, CSS</p>
       </div>
     </div>
 
-    <!-- القسم الأيمن: صورة وخبرات وتعليم -->
+    <!-- القسم الأيمن -->
     <div class="right-section">
       <img src="https://raw.githubusercontent.com/SadeemAli6/My-CV/main/Pink.jpg" alt="Profile Image" />
-
       <h3 class="articles-title">IF YOU BELIEVE IT YOU CAN DO IT!</h3>
 
-      <!-- الخبرات -->
       <div class="section">
         <h3 class="highlight-title">Experience</h3>
         <ul>
@@ -88,7 +81,6 @@
         </ul>
       </div>
 
-      <!-- التعليم -->
       <div class="section">
         <h3 class="highlight-title">Education</h3>
         <p>BA in Information Technology</p>
@@ -96,11 +88,12 @@
     </div>
   </div>
 
-  <!-- جافاسكربت لتبديل الوضع الليلي -->
+  <!-- سكربت تفعيل الوضع الليلي -->
   <script>
     const toggleButton = document.getElementById('mode-toggle');
     toggleButton.addEventListener('click', () => {
       document.body.classList.toggle('dark-mode');
+      toggleButton.textContent = document.body.classList.contains('dark-mode') ? '☀️ Light Mode' : '🌙 Dark Mode';
     });
   </script>
 </body>
