@@ -1,6 +1,6 @@
-/* تطبيق خط Poppins على كل شيء */
+/* استخدام الخط الافتراضي لجميع الصفحة */
 body {
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Segoe UI', sans-serif;
   background-color: #fdfdfd;
   background-image: url('pp2.svg');
   background-size: cover;
@@ -24,7 +24,6 @@ body {
   overflow: hidden;
 }
 
-/* تقسيم الأعمدة */
 .left-section, .right-section {
   padding: 30px;
   width: 50%;
@@ -52,10 +51,10 @@ h2 {
   line-height: 1.6;
 }
 
-/* أيقونة الإيميل مصغرة ومضبوطة */
+/* أيقونة الإيميل بحجم أصغر */
 .email-icon {
-  width: 16px;
-  height: 16px;
+  width: 14px;
+  height: 14px;
   vertical-align: middle;
   margin-right: 6px;
 }
@@ -97,12 +96,15 @@ h2 {
   margin: 0 auto 15px auto;
   display: block;
 }
+
+/* عبارة تحفيزية فقط بخط Poppins */
 .articles-title {
   font-size: 18px;
   font-style: italic;
   color: #222;
   text-align: center;
   margin-bottom: 20px;
+  font-family: 'Poppins', sans-serif;
 }
 
 /* زر الدارك مود */
